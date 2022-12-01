@@ -1,25 +1,29 @@
 
 <div class="main_div">
-    <div class="main_div-node-photo"> 
+    <div
+    id="photo" 
+    class="main_div-node-photo"
+    onclick="PhotoAlert()"
+    > 
         <img src="photo_2022-11-01_14-13-36.jpg" alt="...">
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Title">Алешкин Дмитрий</div>
+        <div class="main_div-node-title">Алешкин Дмитрий</div>
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Text-usual">05.10.2002</div>
+        <div class="main_div-node-text-usual">05.10.2002</div>
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Title">ОмГУ им. Ф.М. Достоевского, ФЦТК,</div>
+        <div class="main_div-node-title">ОмГУ им. Ф.М. Достоевского, ФЦТК,</div>
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Text_small">(Факультет цифровых технологий и кибербезопасности)</div>
+        <div class="main_div-node-text-small">(Факультет цифровых технологий и кибербезопасности)</div>
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Text-usual">3 курс,</div>
+        <div class="main_div-node-text-usual">3 курс,</div>
     </div>
     <div class="main_div-node">
-        <div class="main_div-node-Text-usual">группа МИБ-001-О-01</div>
+        <div class="main_div-node-text-usual">группа МИБ-001-О-01</div>
     </div>       
 </div>
 
@@ -41,7 +45,7 @@
     }
 
 
-    .main_div-node-Title{
+    .main_div-node-title{
         color:aliceblue;
         font-size:xx-large;
         background-color:rgb(75, 75, 75);
@@ -50,7 +54,7 @@
         
     }
 
-    .main_div-node-Text-usual{
+    .main_div-node-text-usual{
         color:rgb(4, 31, 54);
         font-size:larger;
         background-color:rgb(255, 226, 226);
@@ -58,7 +62,7 @@
         
     }
 
-    .main_div-node-Text_small{
+    .main_div-node-text-small{
         color:rgb(0, 0, 0);
         font-size: medium;
         font-weight: 900;
@@ -66,3 +70,10 @@
 
     }
 </style>
+
+<script>
+    function PhotoAlert(){
+        alert("Тот самый алерт на фотке")
+    }
+
+</script>
