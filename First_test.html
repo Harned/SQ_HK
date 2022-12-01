@@ -9,6 +9,9 @@
     > 
         <img src="photo_2022-11-01_14-13-36.jpg" alt="...">
     </div>
+    <input
+        onchange="ChangeInputHadler(event.target.value)"
+    />
     <div class="main_div-node">
         <div class="main_div-node-title">Алешкин Дмитрий</div>
     </div>
@@ -45,7 +48,6 @@
         justify-content: center;
 
     }
-
 
     .main_div-node-title{
         color:aliceblue;
@@ -84,6 +86,10 @@
 
     function MouseOutHandler(event){
         console.log("event", event);
+    }
+
+    function ChangeInputHadler(event){
+        alert("Алерт на инпуте");
     }
 
 </script>
