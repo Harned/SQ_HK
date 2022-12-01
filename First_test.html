@@ -4,6 +4,8 @@
     id="photo" 
     class="main_div-node-photo"
     onclick="PhotoAlert()"
+    onmouseenter="MouseEnterHadler()"
+    onmouseout="MouseOutHandler()"
     > 
         <img src="photo_2022-11-01_14-13-36.jpg" alt="...">
     </div>
@@ -74,6 +76,14 @@
 <script>
     function PhotoAlert(){
         alert("Тот самый алерт на фотке")
+    }
+
+    function MouseEnterHadler(event){
+        console.log("event", event);
+    }
+
+    function MouseOutHandler(event){
+        console.log("event", event);
     }
 
 </script>
